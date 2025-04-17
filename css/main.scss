@@ -118,6 +118,7 @@ input {
 
 }
 
+
 #mainNav {
 
   background-color: rgba($theme-white, .9)
@@ -139,7 +140,7 @@ input {
   background-position-y: bottom;
 }
 
-p {
+p, ol {
   color: lighten($text-color, 40%);
   font-weight: 300;
   font-size: 20px;

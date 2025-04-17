@@ -152,7 +152,7 @@ input { margin-bottom: 10px; }
 
 #tools-header { background-image: url("./img/tools.jpg"); width: 100vw; height: 55vh; background-size: cover; background-position-y: bottom; }
 
-p { color: #777777; font-weight: 300; font-size: 20px; }
+p, ol { color: #777777; font-weight: 300; font-size: 20px; }
 
 li { margin-top: 10px; }
 

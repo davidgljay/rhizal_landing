@@ -1,0 +1,49 @@
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 text-center mb-40">
+                <h1 class="section-heading">Frequently Asked Questions</h1>
+                <hr class="primary">
+            </div>
+            <div class="col-lg-offset-1 col-lg-10 text-left">
+                <h2 class="section-heading">How does Rhizal work?</h2>
+                <p>Rhizal makes it easy for community organizers to build a chatbot for WhatsApp and/or Signal.</p>
+                <p>When community members message this chatbot directly it onboards them.</p>
+                <p>After onboarding, it relays messages to the organizer or to a bare-bones secure AI.</p>
+                <p>The chatbot can also be invited into group threads.</p>
+                <p>Once invited, it will ask the group to come up with a hashtag.</p>
+                <p>It will then ignore everything said in the group unless it contains a hashtag.</p>
+                <p>If Rhizal detects a hashtag, it will forward the message to the appropriate group and then forget it.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 text-left">
+                <h2 class="section-heading">In what ways is Rhizal secure?</h2>
+                <p>Rhizal conducts all messaging through Signal or WhatsApp, which are both end-to-end encrypted.</p>
+                <p>WhatsApp makes the metadata of who is talking to who available to Meta, while Signal does not store this metadata.</p>
+                <p>Messages sent in groups are forwarded by the system and then deleted.</p>
+                <p>By default, messages sent to the chatbot are logged and are visible to the organizer and to the Rhizal team.</p>
+                <p>These messages can be optionally stored in a database controlled by the organizer or encrypted so they are not visible to the Rhizal team.</p>
+                <p>Because Rhizal is an experimental product it has yet to go through rigorous security review and should not yet be used in sensitive contexts.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 text-left">
+                <h2 class="section-heading">What is a "bare-bones secure AI"?</h2>
+                <p>By default Rhizal is AI-free, both for security and so organizers can directly control the language sent to their community.</p>
+                <p>Optionally, Rhizal can forward messages to a quantized (dumbed down) Large Language Model run on a server that the Rhizal team controls.</p>
+                <p>This allows for basic LLM functionality without the cost or security issues associated with a large chatbot provider.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 text-left">
+                <h2 class="section-heading">How do I set up Rhizal?</h2>
+                <p>There are two ways to set up Rhizal:</p>
+                <ol>
+                  <li><a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">Message @rhizal.71 on Signal</a> to introduce yourself to our team and discuss options for setup. We are providing this as a free or low-cost service to values-aligned communities and movement groups.</li>
+                  <li>Fork the <a href="https://github.com/davidgljay/rhizal">Rhizal repository</a> and set up your own instance.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
