@@ -37,8 +37,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // variables.less
 $theme-primary: rgb(101, 145, 234);
-$theme-dark:  darken($theme-primary, 50%);
-$theme-light: lighten($theme-primary, 50%);
+$theme-dark:  darken($theme-primary, 20%);
+$theme-light: lighten($theme-primary, 20%);
 $theme-purple: #390040;
 $theme-green: #4c8817;
 
@@ -82,7 +82,12 @@ header .header-content .header-content-inner h1 {
 }
 
 a {
-  color: $theme-primary;
+  color: $theme-dark;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: darken($theme-dark, 20%);
+  }
 }
 
 h1 {
@@ -385,6 +390,28 @@ hr.primary {
 
 .text-purple {
   color: $theme-purple;
+}
+
+.text-right {
+  text-align: right;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.text-left {
+  text-align: left;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .fill-green {
