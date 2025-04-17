@@ -1,0 +1,513 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #f7f7f3;
+$brand-color:      rgb(31, 55, 10);
+$light-green:      #4c8817;
+
+$grey-color:       #50514f;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+
+// variables.less
+$theme-primary: rgb(50,	129,	141);
+$theme-dark:  rgb(23, 60, 66);
+$theme-light: rgb(80, 208, 227);
+$theme-green: rgb(147,178,116	);
+$theme-blue: #247ba0;
+$theme-purple: #390040;
+$theme-white: #fff;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;
+
+// Custom CSS
+
+header {
+  background-image: none;
+  height: 100vh;
+  color: $theme-green;
+  min-height: 1350px;
+  img {
+    max-width: 500px;
+  }
+}
+
+.header-content-inner {
+  max-width: 800px;
+  margin-top: 100px;
+  text-align: right;
+  display:flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  h1 {
+    text-align: right;
+  }
+}
+
+header .header-content .header-content-inner h1 {
+  text-transform: none;
+}
+
+a {
+  color: $theme-green;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+
+}
+
+#mainNav {
+
+  background-color: rgba($theme-white, .9)
+}
+
+#research-header {
+  background-image: url("/img/research.jpg");
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+#tools-header {
+  background-image: url("/img/tools.jpg");
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+p {
+  color: lighten($text-color, 40%);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+li {
+  margin-top:10px;
+}
+
+section {
+  padding: 50px;
+}
+
+section .row {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.navbar-brand > img {
+  display: inline;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: $theme-primary;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $theme-primary;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
+
+.navbar-default.affix .navbar-header .navbar-brand{
+  color: $theme-primary;
+}
+
+.navbar-default.affix .nav > li > a {
+  color: $theme-primary;
+}
+
+.navbar-default .nav > li > a {
+  color: $theme-primary;
+}
+
+.navbar-default .nav > li > a:hover {
+  color: $theme-light;
+}
+
+.navbar-default.affix .nav > li > a:hover {
+  color: $theme-light;
+}
+
+.navbar-default .nav > li > a.active {
+  color: $theme-light;
+}
+
+.btn-primary {
+  background-color: $theme-primary;
+  border-color: $theme-primary;
+  margin: 10px;
+  padding: 20px;
+}
+
+.btn-green {
+  background-color: $theme-green;
+  border-color: $theme-green;
+  color: $theme-white;
+  margin: 10px;
+  padding: 20px;
+}
+
+.btn-white {
+  background-color: $theme-white;
+  border-color: $theme-white;
+  color: $theme-primary;
+  margin: 10px;
+  padding: 20px;
+}
+
+.dropdown-container {
+  padding: 20px 20px 5px 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  
+  .dropdown-item {
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  margin-left: 40px;
+  
+  a {
+    color: #fff;
+  }
+}
+
+#relstructure {
+  width: 100%;
+  height: 350px;
+}
+
+#relprediction {
+  width: 100%;
+  height: 480px;
+}
+
+#whatwedo {
+  img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    .header-content {
+      padding: 20px 15px 20px 15px;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+    img {
+      display: none;
+    }
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: #fff;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .section-heading {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  header {
+    img {
+      max-width: 300px;
+    }
+    .header-content-inner {
+      // margin-top: 50px;
+
+      h1 {
+        padding-top: 30px;
+      }
+    }
+  }
+    
+  #relstructure {
+    height: 600px;  
+  }
+
+  #relprediction {
+    height: 810px;
+  }
+
+  #research-header {
+    height: 30vh;
+  }
+
+  #story {
+    img {
+      max-width: 250px;
+      margin-bottom: 40px;
+    }
+  }
+
+  #book {
+    img {
+      max-width: 200px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .navbar-brand {
+      font-size: 14px;
+      img {
+        display: none;
+      }
+  }
+
+  .navbar-default .navbar-header .navbar-brand {
+    color: #fff;
+  }
+
+  .section-heading {
+    margin-top: 30px;
+  }
+
+}
+
+hr.primary {
+  border-color: $theme-primary;
+}
+
+.text-white {
+  color: #fff;
+  p {
+    color: #fff;
+  }
+}
+
+.text-light-grey {
+  color: $grey-color-light;
+}
+
+.text-grey {
+  color: $grey-color-dark;
+}
+
+.text-green {
+  color: $theme-green;
+}
+
+.text-light-green {
+  color: $light-green;
+}
+
+.text-red {
+  color: darkred;
+}
+
+.text-blue {
+  color: $theme-blue;
+}
+
+.text-dark {
+  color: $theme-dark;
+}
+
+.text-purple {
+  color: $theme-purple;
+}
+
+.fill-green {
+  fill: $theme-green;
+}
+
+.light-bold {
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.page_header_img {
+  width: 100%;
+  height: 400px;
+  background-image: url("/img/bookclubs.jpg");
+  background-size: cover;
+
+}
+
+.subpage_header_img {
+  max-width: 250px;
+}
+
+.bg-green {
+  background-color: $theme-green;
+}
+
+.svg_icon {
+  height: 84px;
+}
+
+.svg_icon_md {
+  height: 56px;
+}
+
+.iframeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iframe {
+  border: none;
+}
+
+.context-heading > h3 {
+  margin-top: 5px;
+}
+
+.example {
+  margin-left: 30px;
+  margin-right: 30px;
+  h4 {
+    margin-top: 5px;  
+  }
+}
+
+.author-photo {
+  max-width: 500px;
+  @media(max-width: 1200px) {
+    max-width: 300px;
+  }
+}
+
+.fig-text {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.attribution-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.circle-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    overflow:hidden;
+}
+.headshot {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+  font-size:11px;
+  color: $grey-color-light;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

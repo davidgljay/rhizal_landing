@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+  {% include nav.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">You have been unsubscribed</h2>
+      </div>
+    </div>
+    </div>
+  {% include footer.html %}
+  {% include scripts.html %}
+  <script>
+    // Get the query parameters from the current URL
+    const queryParams = new URLSearchParams(window.location.search);
+
+    // Get the values of the query parameters
+    const email = queryParams.get('email');
+
+    // Construct the URL to send the query parameters
+    const sendUrl = `https://hooks.zapier.com/hooks/catch/14500435/3p5fn23/?email=${email}`;
+
+    fetch(sendUrl)
+        .then(response => {
+            console.log('Unsubscribed:', email);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+
+</html>
