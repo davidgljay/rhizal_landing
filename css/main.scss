@@ -119,7 +119,7 @@ input {
 }
 
 #research-header {
-  background-image: url("/img/research.jpg");
+  background-image: url("./img/research.jpg");
   width: 100vw;
   height: 55vh;
   background-size: cover;
@@ -127,7 +127,7 @@ input {
 }
 
 #tools-header {
-  background-image: url("/img/tools.jpg");
+  background-image: url("./img/tools.jpg");
   width: 100vw;
   height: 55vh;
   background-size: cover;
@@ -402,7 +402,7 @@ hr.primary {
 .page_header_img {
   width: 100%;
   height: 400px;
-  background-image: url("/img/bookclubs.jpg");
+  background-image: url("./img/bookclubs.jpg");
   background-size: cover;
 
 }
