@@ -36,12 +36,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 
 // variables.less
-$theme-primary: rgb(50,	129,	141);
-$theme-dark:  rgb(23, 60, 66);
-$theme-light: rgb(80, 208, 227);
-$theme-green: rgb(147,178,116	);
-$theme-blue: #247ba0;
+$theme-primary: rgb(101, 145, 234);
+$theme-dark:  darken($theme-primary, 50%);
+$theme-light: lighten($theme-primary, 50%);
 $theme-purple: #390040;
+$theme-green: #4c8817;
+
 $theme-white: #fff;
 
 
@@ -56,8 +56,7 @@ $theme-white: #fff;
 header {
   background-image: none;
   height: 100vh;
-  color: $theme-green;
-  min-height: 1350px;
+  color: $theme-primary;
   img {
     max-width: 500px;
   }
@@ -83,7 +82,7 @@ header .header-content .header-content-inner h1 {
 }
 
 a {
-  color: $theme-green;
+  color: $theme-primary;
 }
 
 h1 {
@@ -256,6 +255,10 @@ section .row {
   }
 }
 
+.feature-image {
+  max-width: 350px;
+}
+
 @media (max-width: 768px) {
 
   header {
@@ -316,12 +319,13 @@ section .row {
     }
   }
 
-  #book {
+  #connect_threads {
     img {
       max-width: 200px;
       margin-bottom: 40px;
     }
   }
+
 
   .navbar-brand {
       font-size: 14px;
@@ -372,7 +376,7 @@ hr.primary {
 }
 
 .text-blue {
-  color: $theme-blue;
+  color: $theme-primary;
 }
 
 .text-dark {
