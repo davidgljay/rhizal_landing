@@ -1,0 +1,29 @@
+<div>
+<form id="email-form" action="#" class="mt-20 form-blue">
+  <div class="form-group">
+    <label style="display: none;" for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required style="max-width: 400px;">
+  </div>
+  <button type="submit" class="btn btn-primary btn-small">Submit</button>
+</form>
+
+<div id="details-form" style="display: none;" class="mt-20 form-blue">
+  <h2><b>If you are interested in trying Rhizal, please share the following information.</b></h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label style="display: none;" for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="organization">Organization</label>
+      <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="description">How did you hear about Rhizal?</label>
+      <textarea class="form-control" id="description" name="description" rows="3" placeholder="How do you plan to use Rhizal?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div id="thanks" style="display: none;"><h2><b>Thanks, we'll get back to you soon!</b></h2></div>

@@ -208,6 +208,10 @@ section .row {
   padding: 20px;
 }
 
+.btn-small {
+  padding: 10px;
+}
+
 .btn-green {
   background-color: $theme-green;
   border-color: $theme-green;
@@ -234,6 +238,10 @@ section .row {
     text-decoration: none;
     margin-bottom: 10px;
   }
+}
+
+.form-blue input, .form-blue textarea {
+    background-color: #6591ea4a;
 }
 
 .mobile-menu {
@@ -304,6 +312,11 @@ section .row {
         padding-top: 30px;
       }
     }
+  }
+
+  .form-blue input {
+    margin-left: auto;
+    margin-right: auto;
   }
     
   #relstructure {
