@@ -182,6 +182,8 @@ section .row { margin-top: 25px; margin-bottom: 25px; }
 
 .btn-primary { background-color: #6591ea; border-color: #6591ea; margin: 10px; padding: 20px; }
 
+.btn-small { padding: 10px; }
+
 .btn-green { background-color: #4c8817; border-color: #4c8817; color: #fff; margin: 10px; padding: 20px; }
 
 .btn-white { background-color: #fff; border-color: #fff; color: #6591ea; margin: 10px; padding: 20px; }
@@ -189,6 +191,8 @@ section .row { margin-top: 25px; margin-bottom: 25px; }
 .dropdown-container { padding: 20px 20px 5px 20px; min-width: 200px; display: flex; flex-direction: column; }
 
 .dropdown-container .dropdown-item { text-decoration: none; margin-bottom: 10px; }
+
+.form-blue input, .form-blue textarea { background-color: #6591ea4a; }
 
 .mobile-menu { display: none; margin-left: 40px; }
 
@@ -204,7 +208,7 @@ section .row { margin-top: 25px; margin-bottom: 25px; }
 
 @media (max-width: 768px) { header { height: auto; } header .header-content { padding: 20px 15px 20px 15px; } .navbar-brand { font-size: 14px; } .navbar-brand img { display: none; } .navbar-default .navbar-header .navbar-brand { color: #fff; } .mobile-menu { display: block; } .section-heading { margin-top: 30px; } }
 
-@media (max-width: 1200px) { header img { max-width: 300px; } header .header-content-inner h1 { padding-top: 30px; } #relstructure { height: 600px; } #relprediction { height: 810px; } #research-header { height: 30vh; } #story img { max-width: 250px; margin-bottom: 40px; } #connect_threads img { max-width: 200px; margin-bottom: 40px; } .navbar-brand { font-size: 14px; } .navbar-brand img { display: none; } .navbar-default .navbar-header .navbar-brand { color: #fff; } .section-heading { margin-top: 30px; } }
+@media (max-width: 1200px) { header img { max-width: 300px; } header .header-content-inner h1 { padding-top: 30px; } .form-blue input { margin-left: auto; margin-right: auto; } #relstructure { height: 600px; } #relprediction { height: 810px; } #research-header { height: 30vh; } #story img { max-width: 250px; margin-bottom: 40px; } #connect_threads img { max-width: 200px; margin-bottom: 40px; } .navbar-brand { font-size: 14px; } .navbar-brand img { display: none; } .navbar-default .navbar-header .navbar-brand { color: #fff; } .section-heading { margin-top: 30px; } }
 
 hr.primary { border-color: #6591ea; }
 

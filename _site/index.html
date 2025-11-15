@@ -48,7 +48,7 @@
 
 <body id="page-top">
   <header>
-      <div class="header-content mt-60">
+      <div id="header" class="header-content mt-60">
         <div class="col-lg-6"><img src="./img/rhizal_logo.png" alt="Rhizal Logo"/></div>
         
         <div class="col-lg-5 text-primary text-left">
@@ -57,6 +57,36 @@
           <div class="mt-40 text-left">
           <h2><b>Try It Out</b></h2>
           <h2><a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">Send a Signal message to @rhizal.71</a></h2>
+          <h2 id="signup-header"><b>Or Sign Up For Our Alpha</b></h2>
+          <div>
+<form id="email-form" action="#" class="mt-20 form-blue">
+  <div class="form-group">
+    <label style="display: none;" for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required style="max-width: 400px;">
+  </div>
+  <button type="submit" class="btn btn-primary btn-small">Submit</button>
+</form>
+
+<div id="details-form" style="display: none;" class="mt-20 form-blue">
+  <h2><b>If you are interested in trying Rhizal, please share the following information.</b></h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label style="display: none;" for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="organization">Organization</label>
+      <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="description">How did you hear about Rhizal?</label>
+      <textarea class="form-control" id="description" name="description" rows="3" placeholder="How do you plan to use Rhizal?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div id="thanks" style="display: none;"><h2><b>Thanks, we'll get back to you soon!</b></h2></div>
         </div>
 
     </div>
@@ -153,8 +183,37 @@
                 <p>Rhizal is an <a href="https://github.com/davidgljay/rhizal">open source project</a> of <a href="https://relationalitylab.org">Relationality Lab.</a></p>
                 <p>It is an experiment in helping people who build community better understand and connect with the people they serve.</p>
                 <p>It is currently in alpha and is available by invitation only.</p>
-                <p>Becuase Rhizal is still in early development it should not yet be considered secure, and should be used for light experimentation only.</p>
-                <p>To follow our work or see if you're eligible for an invitation,</br> please <a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">send a Signal message to @rhizal.71</a></p>
+                <p>Becuase Rhizal is still in early development its security features are not yet fully implemented, we will work with potential partners to ensure that their security needs can be met by the application.
+                <p>To follow our work or see if you're eligible for an invitation,</br> please <a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">send a Signal message to @rhizal.71 or fill out this form:</a></p>
+                <div>
+<form id="email-form" action="#" class="mt-20 form-blue">
+  <div class="form-group">
+    <label style="display: none;" for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required style="max-width: 400px;">
+  </div>
+  <button type="submit" class="btn btn-primary btn-small">Submit</button>
+</form>
+
+<div id="details-form" style="display: none;" class="mt-20 form-blue">
+  <h2><b>If you are interested in trying Rhizal, please share the following information.</b></h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label style="display: none;" for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="organization">Organization</label>
+      <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization (optional)">
+    </div>
+    <div class="form-group">
+      <label style="display: none;" for="description">How did you hear about Rhizal?</label>
+      <textarea class="form-control" id="description" name="description" rows="3" placeholder="How do you plan to use Rhizal?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div id="thanks" style="display: none;"><h2><b>Thanks, we'll get back to you soon!</b></h2></div>
             </div>
         </div>
     </div>
@@ -184,17 +243,16 @@
                 <p>Rhizal conducts all messaging through Signal or WhatsApp, which are both end-to-end encrypted.</p>
                 <p>WhatsApp makes the metadata of who is talking to who available to Meta, while Signal does not store this metadata.</p>
                 <p>Messages sent in groups are forwarded by the system and then deleted.</p>
-                <p>Note that while these messages are ignored or forgotten, for now they are <i>not</i> end-to-end encrypted. At present, Rhizal decrypts the messages check them for hashtags and to forward them. This is one reason why Rhizal should not yet be used for sensitive applications.</p>
-                <p>By default, messages sent to the chatbot are logged and are visible to the organizer and to the Rhizal team.</p>
-                <p>These messages can be optionally stored in a database controlled by the organizer or encrypted so they are not visible to the Rhizal team.</p>
-                <p>Because Rhizal is an experimental product it has yet to go through rigorous security review and should not yet be used in sensitive contexts.</p>
+                <p>This makes Rhizal more secure than tools such as Slack or Discord, which store messages and make them visible to a wider range of users.</p>
+                <p>For especially secure applications, Rhizal can be run on a server controlled by the implementing organization.</p>
+                <p>Note that Rhizal is an experimental product still undergoing rigorous security review. We will work with potential partners to ensure that the tool meets their security needs.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-offset-1 col-lg-10 text-left">
                 <h2 class="section-heading">What is a "bare-bones secure AI"?</h2>
                 <p>By default Rhizal is AI-free, both for security and so organizers can directly control the language sent to their community.</p>
-                <p>Optionally, Rhizal can forward messages to a quantized (dumbed down) Large Language Model run on a server that the Rhizal team controls.</p>
+                <p>Optionally, Rhizal can forward messages to a quantized (dumbed down) Large Language Model run on a server that the Rhizal team or one of our partner organizations controls.</p>
                 <p>This allows for basic LLM functionality without the cost or security issues associated with a large chatbot provider.</p>
             </div>
         </div>
@@ -203,7 +261,7 @@
                 <h2 class="section-heading">How do I set up Rhizal?</h2>
                 <p>There are two ways to set up Rhizal:</p>
                 <ol>
-                  <li><a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">Message @rhizal.71 on Signal</a> to introduce yourself to our team and discuss options for setup. We are providing this as a free or low-cost service to values-aligned communities and movement groups.</li>
+                  <li><a href="https://signal.me/#eu/KfDzAhXoUfD7SnvWdrT5VKo68i0FWEU3GlkPsFiCETlJT-kL_6FIMqImOBqZSSg7">Message @rhizal.71 on Signal</a> or <a href="/#header">apply on this site</a> to introduce yourself to our team and discuss options for setup. We are providing this as a free or low-cost service to values-aligned communities and movement groups.</li>
                   <li>Fork the <a href="https://github.com/davidgljay/rhizal">Rhizal repository</a> and set up your own instance.</li>
                 </ol>
             </div>
