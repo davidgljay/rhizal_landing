@@ -13,11 +13,16 @@
         $('#details-form').show();
         emailSubmitted = true;
         var formData = new FormData(this);
+        formData.append('Email', email);
+        const body = {
+            form: Object.fromEntries(formData.entries()),
+            subject: "New email signup to Rhizal"
+        }
         $.ajax({
-        url: 'https://gettoolkit.app/webhook/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..9lLhj4hbJLoxkcG8.K-nkGoLjbuy59mQSiupxlMqGHMfFKhpNAzFjfesj0SpBJdZe2W6ieuhVfhFWjHfSj3mWXH8fl5JMhQJNHqeQfGwOC_oLXu1s5Ek.sBhVr9eWOZheBNoWs9TtIQ',
+        url: 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-8e8c4968-55c0-47b4-a2c2-0a18affc3f51/emailer/send',
         type: 'post',
-        data: {...formData, site: "rhizal"},
-        contentType: false,
+        data: JSON.stringify(body),
+        contentType: 'application/json',
         processData: false,
         });
         
@@ -30,12 +35,16 @@
         }
         var formData = new FormData(this);
         formData.append('Email', email);
+        const body = {
+            form: Object.fromEntries(formData.entries()),
+            subject: "Details submitted to Rhizal"
+        }
 
         $.ajax({
-            url: 'https://hooks.zapier.com/hooks/catch/14500435/u326m5w/',
+            url: 'https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-8e8c4968-55c0-47b4-a2c2-0a18affc3f51/emailer/send',
             type: 'post',
-            data: formData,
-            contentType: false,
+            data: JSON.stringify(body),
+            contentType: 'application/json',
             processData: false,
         });
         $('#details-form').hide();
