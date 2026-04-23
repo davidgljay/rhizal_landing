@@ -299,6 +299,11 @@ section .row {
   }
 }
 
+.form-center {
+  display: flex;
+  justify-content:center;
+}
+
 @media (max-width: 1200px) {
 
   header {

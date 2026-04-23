@@ -14,9 +14,9 @@
         emailSubmitted = true;
         var formData = new FormData(this);
         $.ajax({
-        url: 'https://hooks.zapier.com/hooks/catch/14500435/u326m5w/',
+        url: 'https://gettoolkit.app/webhook/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..9lLhj4hbJLoxkcG8.K-nkGoLjbuy59mQSiupxlMqGHMfFKhpNAzFjfesj0SpBJdZe2W6ieuhVfhFWjHfSj3mWXH8fl5JMhQJNHqeQfGwOC_oLXu1s5Ek.sBhVr9eWOZheBNoWs9TtIQ',
         type: 'post',
-        data: formData,
+        data: {...formData, site: "rhizal"},
         contentType: false,
         processData: false,
         });
